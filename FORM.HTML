@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scaled=1.0">
+        <meta http-equi="X-UA-Compatible"content="ie=edge">
+    <title>GARAGE SERVICES</title>  
+    <style>
+        body
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color:black;
+            font-style: normal;
+            
+        }
+.heading {
+  margin-top: 100px;
+  margin-left: 550px;
+}
+.toggle-btn{
+  
+  padding: 10px 30px;
+  margin-left: 80px;
+  cursor: pointer;
+  background: white;
+  border: 20px;
+  outline: white;
+  position: relative;
+}
+.navbar{
+  width: 110%;
+  height: 80px;
+  
+  background-color: rgb(4, 3, 3);
+}
+
+.icon{
+  width: 500px;
+  float: left;
+  height: 100px;
+}
+
+.logo{
+  color: #f6f4f2;
+  font-size: 2Opx;
+  font-family: Arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 20px;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.menu{
+  width: 800px;
+  float: left;
+  height: 70px;
+  margin-left: 100px;
+}
+
+ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li{
+  list-style: none;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #f6f3f1;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+  color: #242221;
+}
+    </style>
+    
+    
+
+<link rel="stylesheet" href="css/style.css" >
+ </head>
+ <body>
+
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">GARAGE SERVICES</h2>
+            </div>
+          
+            <div class="menu">
+                <ul>
+                    <li><a href="file:///D:/Desktop/techademy/Garageareas.html"><u>HOME</u></a></li>
+                    <li><a href="http://localhost:4200/"><u>BOOKING</u></a></li>
+                    <li><a href="http://localhost:4200/appointment-list"><u>DASHBOARD</u></a></li>
+                    
+                    <li><a href="file:///D:/Desktop/techademy/FORM.HTML"><u>FEEDBACKS</u></a></li>
+                    <button type="button" class="toggle-btn" onclick="window.location.href ='file:///D:/Desktop/techademy/home.html'">Logout</button>
+                </ul>
+            </div>
+          
+          </div> 
+       
+            <body style="background-image: url('https://images.pexels.com/photos/4488667/pexels-photo-4488667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');background-repeat: no-repeat; background-size: 100%;";
+            <center><h2 style="margin-top: 120px;margin-left: 650px; font-size: xx-large;color: #f6f3f1;">FEEDBACK </h2></center>
+            <!--Once the form is submitted, all the form data is forwarded to InsertBooks.php -->
+            <form style= "background: linear-gradient(rgba(184,182,182,0.8)50%,rgba(184, 182, 182, 0.8)50%); width: fit-content; margin-left: 550px; margin-top: 70px;">
+            
+            
+    <div class="wrap">
+        <table style="font-size: 25px;">
+                <tr>
+                    <td>
+                        <label> 
+                            How do you rate your overall experience
+                        </label>
+                        <br>
+                        
+                        <br>
+                        <input  type="radio" name="rate" value="bad">Bad<br>
+                        <input  type="radio" name="rate" value="average">average<br>
+                        <input  type="radio" name="rate" value="good">good
+                     </td>
+                    </tr>
+                    
+                    <tr>
+
+                    <td>
+                        <br>
+                        <label>Message</label>
+                        <br/>
+                        <textarea style="width: 380px;"></textarea>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <button style="padding:5px;" type="submit">submit</button>
+                            </td>
+                        </tr>
+                        </form>
+                     </table>
+    </div>
+ </body>
+</html>

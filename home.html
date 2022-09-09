@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div id="one">
+        <div class="navbar">
+            <h1>GARAGE SERVICES</h1>
+            <a href="file:///D:/Desktop/techademy/register.html">
+                <button class="login" type="button">Login</button>
+            </a>
+            <a href="file:///D:/Desktop/techademy/admin.html">
+                <button class="admin" type="button">Admin</button>
+            </a>
+        </div>
+        <div class="container">
+            <div class="text">
+                <h1>REPAIR...</h1>
+                <p>KEEPING YOUR VEHICAL <br> IN TOP CONDITION.</p>
+            </div>    
+        </div>
+        <div class="slider">
+            <img src="file:///D:/Desktop/techademy/left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" class="active thumbnail">
+                <img src="https://images.unsplash.com/photo-1620002093362-ab4776655a50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1584978831835-a0a933d93274?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1652852592938-15bf8c50ab6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80" class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="thumbnail">
+
+            </div>
+            <img src="file:///D:/Desktop/techademy/right-arrow.png" id="next">
+        </div>
+
+
+    </div>
+    <script>
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var hero = document.getElementById("one");
+
+        var backgroundimg =new Array(
+            "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+            "https://images.unsplash.com/photo-1620002093362-ab4776655a50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "https://images.unsplash.com/photo-1584978831835-a0a933d93274?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "https://images.unsplash.com/photo-1652852592938-15bf8c50ab6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80",
+            "https://images.unsplash.com/photo-1493238792000-8113da705763?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        );
+        let i=0;
+        next.onclick = function(){
+            if(i < 4){
+                one.style.backgroundImage = 'url("'+backgroundimg[i+1]+'")';
+                thumbnail[i+1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i++;
+            }
+        }
+        prev.onclick = function(){
+            if(i > 0){
+                one.style.backgroundImage = 'url("'+backgroundimg[i-1]+'")';
+                thumbnail[i-1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i--;
+            }
+        }
+    </script>
+
+</body>
+</html>

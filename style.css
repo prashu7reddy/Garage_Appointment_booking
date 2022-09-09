@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    background-image: url(https://images.pexels.com/photos/4489729/pexels-photo-4489729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+nav{
+   display:flex;
+   width: 100%;
+   align-items: center;
+   padding: 5px 0;
+}
+.submit-btn{
+   width: 85%;
+   color: rgb(247, 248, 249);
+   padding: 10px 30px;
+   cursor: pointer;
+   display: block;
+   margin-top: 10px;
+   margin-left: 30px;
+   background: linear-gradient(to right,rgb(85, 82, 82),rgb(79, 78, 78));
+   border: 0;
+   outline: none;
+   border-radius: 30px;
+}
+nav li{
+   display: inline-block;
+   margin: 0 8px;
+   line-height: 80px;
+
+
+}
+nav a{
+   color: rgb(252, 241, 241);
+   font-size: 18px;
+   text-transform: uppercase;
+   border-radius: 3px;
+   padding: 7px 10px;
+   border: 1px solid transparent;
+}
+a.active,a:hover{
+   position: relative;
+   border: 1px solid white;
+   transition: .5s;
+}
+
+.logo{
+   font-size: 50px;
+   margin-left: 10PX;
+   color: rgb(242, 244, 247);
+   padding-right: 10px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-transform: uppercase;
+   box-shadow: 0 0 20px 9px rgb(96, 212, 230);
+}
+.active{
+   left: 800px;
+}
+.color{
+   color: aliceblue;
+}
+nav ul{
+   float: right;
+   margin-right: 40px;
+}
+
+div.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    background-color:rgba(255, 255, 255);
+    padding: 30px;
+    box-shadow: 0 50px 50px darkslategray;
+
+
+}
+ div.container div.myform{
+    width: 270px;
+    margin-right: 30px;
+ }
+
+ div.container div.myform h2{
+    color: black;
+    margin-bottom: 20px;
+ }
+
+ div.container div.myform input{
+    border: none;
+    outline: none;
+    border-radius: 0;
+    width: 100%;
+    border-bottom: 2px solid #1c1c1e;
+    margin-bottom: 25px;
+    padding: 7px 0;
+    font-size: 14px;
+ }
+ div.container div.myform button{
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0);
+    border:none;
+    outline:none;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 5px 12px;
+    font-weight: 500;
+
+ }
+ div.container div.image img{
+    width:300px;
+ }
